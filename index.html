@@ -1,116 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PANDIT JI FOOD TIFFIN AND MESS SERVICE</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background: #fff;
-    }
-
-    header {
-      padding: 20px;
-    }
-
-    header img {
-      width: 130px;
-      border-radius: 50%;
-    }
-
-    h1 {
-      color: red;
-      margin: 10px 0 0 0;
-      font-size: 24px;
-      font-weight: 900;
-    }
-
-    h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      font-weight: 600;
-    }
-
-    .menu-images img {
-      width: 90%;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-
-    .packages {
-      text-align: left;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: #f8f8f8;
-      border-radius: 10px;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 15px;
-      background: red;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- HEADER + LOGO -->
-  <header>
-    <img src="logo.png" alt="Pandit Ji Logo">
-    <h1>PANDIT JI FOOD TIFFIN AND MESS SERVICE</h1>
+  <header class="site-header">
+    <div class="center-wrap">
+      <img src="logo.png" alt="Pandit Ji Logo" class="logo">
+      <h1 class="brand">PANDIT JI FOOD</h1>
+      <p class="brand-sub">TIFFIN & MESS SERVICE</p>
+
+      <nav class="site-nav">
+        <a href="#menu">Menu</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO LINE -->
-  <h2>Delicious • Fresh • Homemade • Healthy</h2>
-  <p>We deliver hygienic & homemade food daily at affordable prices.</p>
+  <main class="container">
 
-  <!-- WHATSAPP + CALL BUTTONS -->
-  <div class="contact">
-    <a href="https://wa.me/917089477794">WhatsApp Order</a>
-    <a href="tel:7089477794">Call Now</a>
-  </div>
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Delicious • Fresh • Homemade • Healthy</h2>
+      <p>Pure Veg • Daily Home-style Meals • Hygienic Cooked Food</p>
 
-  <!-- FOOD IMAGES -->
-  <h2>Our Daily Menu</h2>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://wa.me/917089477794?text=Hello%20Pandit%20Ji%20Food%20-%20I%20want%20to%20order" target="_blank">WhatsApp Order</a>
+        <a class="btn outline" href="tel:+917089477794">Call Now</a>
+        <a class="btn outline" href="Pandit_Ji_Tiffin_Packages.pdf" download>Download Packages (PDF)</a>
+      </div>
+    </section>
 
-  <div class="menu-images">
-    <img src="puri.jpg" alt="Puri Sabji">
-    <img src="paratha.jpg" alt="Paratha">
-    <img src="poha.jpg" alt="Poha">
-    <img src="sabudana.jpg" alt="Sabudana Khichdi">
-  </div>
+    <!-- MENU SUMMARY -->
+    <section id="menu" class="section">
+      <h3>Our Daily Menu — (Pure Veg)</h3>
+      <div class="menu-grid">
+        <div class="menu-item">Masala Puri Sabji</div>
+        <div class="menu-item">Paratha + Regular Sabji</div>
+        <div class="menu-item">Alu Paratha with Curd</div>
+        <div class="menu-item">Poha</div>
+        <div class="menu-item">Noodles</div>
+        <div class="menu-item">Sabudana Khichdi</div>
+        <div class="menu-item">Alu Banda</div>
+        <div class="menu-item">Idli Sambhar</div>
+        <div class="menu-item">Tawa Roti</div>
+        <div class="menu-item">Lachha Paratha</div>
+      </div>
+    </section>
 
-  <!-- PACKAGES SECTION -->
-  <h2>Monthly Packages</h2>
+    <!-- GALLERY (shows all uploaded images) -->
+    <section id="gallery" class="section">
+      <h3>Food Gallery</h3>
+      <p class="muted">Tap an image to view larger — all dishes are pure veg and freshly prepared.</p>
 
-  <div class="packages">
-    <p><b>1) Lunch + Dinner – ₹3500</b><br>
-    • Lunch + Dinner<br>• Seasonal Sabji<br>• Dal, Rice, Roti<br>• Salad + Pickle</p>
+      <div class="gallery-grid">
+        <!-- add as many <figure> entries as images you uploaded; below are examples -->
+        <figure><img src="masala_puri.jpg" alt="Masala Puri"><figcaption>Masala Puri Sabji</figcaption></figure>
+        <figure><img src="paratha.jpg" alt="Paratha"><figcaption>Paratha Regular Sabji</figcaption></figure>
+        <figure><img src="alu_paratha.jpg" alt="Alu Paratha"><figcaption>Alu Paratha with Curd</figcaption></figure>
+        <figure><img src="poha.jpg" alt="Poha"><figcaption>Poha</figcaption></figure>
+        <figure><img src="noodles.jpg" alt="Noodles"><figcaption>Noodles</figcaption></figure>
+        <figure><img src="sabudana.jpg" alt="Sabudana Khichdi"><figcaption>Sabudana Khichdi</figcaption></figure>
+        <figure><img src="alu_bhindi.jpg" alt="Alu Banda"><figcaption>Alu Banda</figcaption></figure>
+        <figure><img src="idli_sambhar.jpg" alt="Idli Sambhar"><figcaption>Idli Sambhar</figcaption></figure>
+        <figure><img src="tawa_roti.jpg" alt="Tawa Roti"><figcaption>Tawa Roti</figcaption></figure>
+        <figure><img src="lachha_paratha.jpg" alt="Lachha Paratha"><figcaption>Lachha Paratha</figcaption></figure>
+        <!-- if you have more images, add more figure blocks -->
+      </div>
+    </section>
 
-    <p><b>2) Special Lunch + Dinner – ₹5000</b><br>
-    • Premium Sabji<br>• Dinner Gravy + Sabji<br>• Basmati Rice<br>• Roti/Paratha<br>• Sunday Special</p>
+    <!-- PACKAGES -->
+    <section id="packages" class="section">
+      <h3>PANDIT JI TIFFIN CENTER - Monthly Packages</h3>
 
-    <p><b>3) Full Day Tiffin – ₹5000</b><br>
-    • Breakfast + Lunch + Dinner<br>• Sabji + Dal Rice + Roti</p>
+      <div class="pkg-grid">
+        <article class="pkg">
+          <h4>1) Lunch + Dinner Package – ₹3500 / month</h4>
+          <ul>
+            <li>Lunch (Complete Meal)</li>
+            <li>Dinner (Complete Meal)</li>
+            <li>Seasonal Green Sabji</li>
+            <li>Gravy Sabji</li>
+            <li>Dal, Rice, Roti</li>
+            <li>Salad + Pickle</li>
+          </ul>
+        </article>
 
-    <p><b>4) Premium Full Day – ₹7000</b><br>
-    • Breakfast + Lunch + Dinner<br>• Premium Sabji<br>• Basmati Rice<br>• Sunday Feast</p>
-  </div>
+        <article class="pkg">
+          <h4>2) Special Lunch + Dinner Package – ₹5000 / month</h4>
+          <ul>
+            <li>Special Lunch (Premium Sabji)</li>
+            <li>Special Dinner (Gravy + Dry Sabji)</li>
+            <li>Basmati Rice</li>
+            <li>Fresh Roti / Paratha</li>
+            <li>Dal + Salad + Pickle</li>
+            <li>Sunday Special Included</li>
+          </ul>
+        </article>
 
-  <br><br>
+        <article class="pkg">
+          <h4>3) Full Day Tiffin Package – ₹5000 / month</h4>
+          <ul>
+            <li>Breakfast Daily</li>
+            <li>Lunch + Dinner</li>
+            <li>Seasonal Green Sabji</li>
+            <li>Gravy Sabji in Dinner</li>
+            <li>Dal, Rice, Roti/Paratha</li>
+            <li>Salad + Pickle</li>
+            <li>Sunday Special</li>
+          </ul>
+        </article>
+
+        <article class="pkg">
+          <h4>4) Premium Full Day Package – ₹7000 / month</h4>
+          <ul>
+            <li>Breakfast + Lunch + Dinner</li>
+            <li>Premium Gravy & Dry Sabji</li>
+            <li>Basmati Rice</li>
+            <li>Roti / Paratha / Fulka Options</li>
+            <li>Fresh Salad + Pickle</li>
+            <li>Sunday Feast • Premium Packaging</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="muted">For full details & printable menu, download the PDF below:</p>
+      <a class="btn primary" href="Pandit_Ji_Tiffin_Packages.pdf" download>Download Packages (PDF)</a>
+    </section>
+
+    <!-- ORDER FORM (sends to WhatsApp) -->
+    <section class="section order-section" aria-label="Order Form">
+      <h3>Place Your Order</h3>
+      <p class="muted">Fill below and tap "Send to WhatsApp" — the message will open in WhatsApp ready to send.</p>
+
+      <div class="order-grid">
+        <input id="custName" placeholder="Your name" />
+        <input id="custPhone" placeholder="Mobile number" />
+        <input id="custAddr" placeholder="Full address (area / city)" />
+        <select id="custPlan">
+          <option>Lunch + Dinner</option>
+          <option>Special Lunch + Dinner</option>
+          <option>Full Day Tiffin</option>
+          <option>Premium Full Day</option>
+        </select>
+        <input id="custQty" type="number" min="1" value="1" />
+        <input id="custNotes" placeholder="Any instructions (less spicy / no onion...)" />
+      </div>
+
+      <div style="margin-top:12px;">
+        <button class="btn primary" onclick="sendWhatsAppOrder()">Send to WhatsApp</button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h3>Contact & Delivery</h3>
+      <p class="muted">Call or WhatsApp to order, or use the form above.</p>
+
+      <div class="contact-grid">
+        <div><strong>Phone / WhatsApp</strong><br><a href="tel:+917089477794">+91 7089477794</a></div>
+        <div><strong>Location</strong><br>City, Area (update your exact address)</div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> PANDIT JI FOOD TIFFIN AND MESS SERVICE — All Rights Reserved
+    </footer>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a class="float-wa" href="https://wa.me/917089477794" target="_blank" aria-label="WhatsApp">
+    💬
+  </a>
+
+<script>
+  document.getElementById('year').innerText = new Date().getFullYear();
+
+  function sendWhatsAppOrder(){
+    const name = encodeURIComponent(document.getElementById('custName').value || 'NA');
+    const phone = encodeURIComponent(document.getElementById('custPhone').value || 'NA');
+    const addr = encodeURIComponent(document.getElementById('custAddr').value || 'NA');
+    const plan = encodeURIComponent(document.getElementById('custPlan').value);
+    const qty = encodeURIComponent(document.getElementById('custQty').value || '1');
+    const notes = encodeURIComponent(document.getElementById('custNotes').value || '');
+    const msg = `*New Order from Website*%0AName: ${name}%0AMobile: ${phone}%0AAddress: ${addr}%0APlan: ${plan}%0AQty: ${qty}%0ANotes: ${notes}`;
+    window.open(`https://wa.me/917089477794?text=${msg}`, '_blank');
+  }
+</script>
 
 </body>
 </html>
