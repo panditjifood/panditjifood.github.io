@@ -1,82 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pandit Ji Food Tiffin Service</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PANDIT JI - Tiffin & Mess Service</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- favicon (optional) -->
 </head>
 <body>
-
-    <!-- Logo + Header -->
-    <header>
-        <img src="https://i.ibb.co/6bJvC1b/food-logo.png" class="logo" alt="Logo">
-        <h1>PANDIT JI FOOD</h1>
-        <p class="tagline">Delicious • Fresh • Homemade • Healthy</p>
-    </header>
-
-    <!-- Banner -->
-    <div class="banner">
-        <img src="https://i.ibb.co/JpKqPKQ/tiffin-banner.jpg" alt="Tiffin Banner">
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Best Tiffin & Mess Service in Your Area</h2>
-        <p>We deliver hygienic, tasty & homemade food every day at affordable prices.</p>
-    </section>
-
-    <!-- Menu Section -->
-    <section class="menu">
-        <h2>Our Daily Menu</h2>
-        <ul>
-            <li>Chapati / Roti</li>
-            <li>Seasonal Sabzi</li>
-            <li>Dal</li>
-            <li>Rice</li>
-            <li>Salad / Pickle</li>
-        </ul>
-    </section>
-
-    <!-- Food Gallery -->
-    <section class="gallery">
-        <h2>Food Photos</h2>
-        <div class="grid">
-            <img src="https://i.ibb.co/KxvRrWx/thali1.jpg" alt="">
-            <img src="https://i.ibb.co/BzrZtTw/thali2.jpg" alt="">
-            <img src="https://i.ibb.co/PcXrJqg/thali3.jpg" alt="">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- logo.png upload कर के नाम यही रखें -->
+        <img src="logo.png" alt="Pandit Ji logo" class="logo" onerror="this.style.display='none'"/>
+        <div class="brand-text">
+          <h1>PANDIT JI</h1>
+          <p>Tiffin & Mess Service</p>
         </div>
+      </div>
+
+      <nav class="top-nav">
+        <a href="#menu">Menu</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Delicious • Fresh • Homemade • Healthy</h2>
+          <p>We deliver hygienic, tasty & homemade food every day at affordable prices.</p>
+          <div class="hero-cta">
+            <!-- replace number below with yours -->
+            <a class="btn whatsapp" href="https://wa.me/7089477794" target="_blank" rel="noreferrer">WhatsApp Order</a>
+            <a class="btn call" href="tel:+917089477794">Call</a>
+          </div>
+        </div>
+        <div class="hero-images">
+          <!-- placeholders - upload your own and name food1.jpg food2.jpg -->
+          <img src="food1.jpg" alt="Food 1" onerror="this.src='placeholder-food.png'">
+          <img src="food2.jpg" alt="Food 2" onerror="this.src='placeholder-food.png'">
+        </div>
+      </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="plans">
-        <h2>Tiffin Plans</h2>
-        <p><strong>Monthly:</strong> ₹2500 – ₹3000</p>
-        <p><strong>Weekly:</strong> ₹700</p>
-        <p><strong>Per Tiffin:</strong> ₹80 – ₹100</p>
+    <section id="menu" class="section container">
+      <h3 class="section-title">Our Daily Menu</h3>
+      <ul class="menu-list">
+        <li>Chapati / Roti</li>
+        <li>Seasonal Sabzi</li>
+        <li>Dal</li>
+        <li>Rice</li>
+        <li>Salad / Pickle</li>
+      </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>📞 <strong>Phone:</strong> <a href="tel:+917089477794">+91 70894 77794</a></p>
-        <p>📍 <strong>Location:</strong> City, Area</p>
-
-        <!-- Google Map -->
-        <iframe 
-            src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            class="map">
-        </iframe>
-
-        <a class="wbtn" href="https://wa.me/917089477794" target="_blank">Order on WhatsApp</a>
+    <section id="packages" class="section grey">
+      <div class="container">
+        <h3 class="section-title">Tiffin Plans</h3>
+        <div class="packages">
+          <div class="card">
+            <h4>Monthly</h4>
+            <p class="price">₹2500 – ₹3000</p>
+            <ul>
+              <li>Daily Tiffin - Veg</li>
+              <li>Pickup/Delivery options</li>
+            </ul>
+            <a class="btn" href="Pandit_Ji_Tiffin_Packages.pdf" target="_blank">View PDF</a>
+          </div>
+          <div class="card">
+            <h4>Weekly</h4>
+            <p class="price">₹700</p>
+            <ul>
+              <li>7 Days Meal</li>
+            </ul>
+            <a class="btn" href="Pandit_Ji_Tiffin_Packages.pdf" target="_blank">View PDF</a>
+          </div>
+          <div class="card">
+            <h4>Per Tiffin</h4>
+            <p class="price">₹80 – ₹100</p>
+            <ul>
+              <li>Single day orders</li>
+            </ul>
+            <a class="btn" href="Pandit_Ji_Tiffin_Packages.pdf" target="_blank">View PDF</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/917089477794" class="float" target="_blank">💬</a>
+    <section id="contact" class="section container">
+      <h3 class="section-title">Contact Us</h3>
+      <p><strong>Phone:</strong> <a href="tel:+917089477794">+91 70894 77794</a></p>
+      <p><strong>Location:</strong> City, Area</p>
+      <div class="map-embed">
+        <!-- optional: add google maps iframe if you want -->
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2025 PANDIT JI FOOD TIFFIN & MESS SERVICE | All Rights Reserved</p>
-    </footer>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 PANDIT JI FOOD TIFFIN AND MESS SERVICE | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- small inline script to ensure smooth scroll on anchor clicks -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
 </body>
 </html>
