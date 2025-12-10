@@ -5,25 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PANDIT JI FOOD TIFFIN AND MESS SERVICE</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+
         header {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 10px 20px; border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
         }
-        .logo img { width: 70px; height: 70px; border-radius: 50%; }
-        .site-name {
-            font-size: 22px; font-weight: 800; color: #d60000; 
-            line-height: 20px; margin-left: 10px;
-        }
-        nav a {
-            margin-left: 20px; text-decoration: none; font-size: 17px;
-            color: #444; font-weight: 600;
-        }
-        nav a:hover { color: #d60000; }
+
         .top-bar {
-            display: flex; align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
+
+        .logo img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .site-name {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 20px;
+            margin-left: 10px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        section {
+            padding: 20px;
+        }
+
     </style>
 </head>
 
@@ -31,18 +58,66 @@
 
 <header>
     <div class="top-bar">
+
         <div class="logo">
-            <img src="A_logo_for_Pandit_Ji_Food_Tiffin_and_Mess_Service.png" alt="Pandit Ji Logo">
+            <img src="logo.png" alt="Pandit Ji Logo">
         </div>
+
         <div class="site-name">
-            PANDIT JI FOOD<br>
+            PANDIT JI FOOD <br>
             TIFFIN & MESS SERVICE
         </div>
-    </div>
 
-    <nav>
-        <a href="#menu">Menu</a>
-        <a href="#packages">Packages</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
 </header>
+
+<section>
+    <h2>Delicious • Fresh • Homemade • Healthy</h2>
+    <p>We deliver hygienic, tasty & homemade food every day at affordable prices.</p>
+
+    <a href="https://wa.me/917089477794" style="font-size:18px; color:blue;">WhatsApp Order</a>
+    &nbsp;&nbsp;
+    <a href="tel:7089477794" style="font-size:18px; color:blue;">Call</a>
+</section>
+
+<section id="menu">
+    <h2>Our Daily Menu</h2>
+    <ul>
+        <li>Chapati / Roti</li>
+        <li>Seasonal Sabzi</li>
+        <li>Dal</li>
+        <li>Rice</li>
+        <li>Salad / Pickle</li>
+    </ul>
+</section>
+
+<section id="packages">
+    <h2>Tiffin Plans</h2>
+    <p><b>Monthly:</b> ₹2500 – ₹3000</p>
+    <p><b>Weekly:</b> ₹700</p>
+    <p><b>Per Tiffin:</b> ₹80 – ₹100</p>
+
+    <p>
+        <a href="Pandit_Ji_Tiffin_Packages.pdf" download style="color:red; font-size:18px;">
+            📄 Download Full Package PDF
+        </a>
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>📞 Phone: <a href="tel:7089477794">7089477794</a></p>
+    <p>📍 Location: City, Area</p>
+
+    <p>&copy; 2025 PANDIT JI FOOD TIFFIN AND MESS SERVICE | All Rights Reserved</p>
+</section>
+
+</body>
+</html>
